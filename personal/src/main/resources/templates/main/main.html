@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Title</title>
+</head>
+<body>
+<br/>
+
+<div class="container" >
+    <div class="jumbotron text-center">
+        <span th:text="${session.Login.nick}+님" onclick="location.href='/main/user-info';"></span>
+        <button onclick="location.href='/main/logout';">로그아웃</button>
+        <div>
+            <input id="searchBox"
+                   type="text"
+                   placeholder="지역을 검색해주세요ex.(북구)"
+                   value="북구"/>
+        </div>
+        <button id="searchButton" type="button" class="btn btn-primary">검색</button>
+    </div>
+    <div id="trainer-list"></div>
+
+    <hr/>
+    <h2>리뷰</h2>
+    <br/>
+    <div id="review-list"></div>
+
+</div>
+
+</body>
+<script src="/js/main.js"></script>
+</html>

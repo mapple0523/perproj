@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/personal?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: s6vv8x@@23
+  jpa:
+    open-in-view: false
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+

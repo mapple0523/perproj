@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>트레이너</title>
+</head>
+<body>
+<span th:text="${session.Login.nick}+님" onclick="location.href='/main/user-info';" ></span>
+<button onclick="location.href='/main/logout';">로그아웃</button>
+<h1>트레이너 매칭하기</h1>
+<div id="trainer"></div>
+
+<hr/>
+<div>
+    <input type="date" id="date" value="2023-04-21">
+<!--    <input type="time" id="time">-->
+    <br/>
+    <button id="time9">09:00</button>
+    <button id="time10">10:00</button>
+    <button id="time11">11:00</button>
+    <button id="time12">12:00</button>
+    <button id="time13">13:00</button> <br/>
+    <button id="time14">14:00</button>
+    <button id="time15">15:00</button>
+    <button id="time16">16:00</button>
+    <button id="time17">17:00</button>
+    <button id="time18">18:00</button> <br/>
+    <button id="time19">19:00</button>
+    <button id="time20">20:00</button>
+    <button id="time21">21:00</button>
+    <button id="time22">22:00</button>
+    <button id="time23">23:00</button>
+</div>
+</body>
+<script src="/js/trainer.js"></script>
+</html>
